@@ -35,7 +35,7 @@ let LogArray = [
   { key: 'Pass', value: '' },
 ];
 
-SUB.addEventListener('click', function () {
+const cucu = function () {
   if (SUB.textContent === 'Register') {
     let user = document.getElementById('Userinput').value;
     let pass = document.getElementById('passinput').value;
@@ -159,6 +159,22 @@ SUB.addEventListener('click', function () {
       }
     }
   }
+};
+
+let ut = document.getElementById('Userinput');
+let pt = document.getElementById('passinput');
+ut.addEventListener('keyup', function (e) {
+  if (e.keyCode == 13) {
+    cucu();
+  }
+});
+pt.addEventListener('keyup', function (e) {
+  if (e.keyCode == 13) {
+    cucu();
+  }
+});
+SUB.addEventListener('click', function () {
+  cucu();
 });
 
 let IO = document.getElementById('hulle');
